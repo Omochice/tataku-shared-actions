@@ -1,20 +1,20 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: [
-    "github>Omochice/tataku-shared-actions",
+    'github>Omochice/tataku-shared-actions',
   ],
-  "renovate-config-presets": {
+  'renovate-config': {
     managerFilePatterns: [
-      "renovate.json5",
-      "default.json",
+      'renovate.json5',
+      'default.json',
     ],
   },
   packageRules: [
     {
       matchUpdateTypes: [
-        "major",
-        "minor",
-        "patch",
+        'major',
+        'minor',
+        'patch',
       ],
       automerge: true,
     },
